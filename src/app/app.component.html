@@ -1,0 +1,23 @@
+
+<div class="container">
+    <div class="col-md-3">
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+    </div>
+    <div class="col-md-6">
+        <div class="row" style="max-width: 550px;">
+            <h3>Employee Search </h3>
+            <div class="form-group">
+                <input type="text" placeholder="Search" [(ngModel)]="query">
+            </div>
+        </div>
+
+        <div class ="row">
+            <h3>Results </h3>
+            <employee [employees]="fetchData" [qury]='query'></employee>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+
